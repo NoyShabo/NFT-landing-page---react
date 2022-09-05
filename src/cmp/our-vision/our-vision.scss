@@ -1,0 +1,89 @@
+.our-vision{
+    padding-top: 90px;
+    overflow-x: hidden;
+    .text-container{
+        width: fit-content;
+        margin: 0 auto;
+        width:  914px;
+    }
+    h2{
+        color: #272E4A;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: 420;
+        font-size: 2rem;
+        padding: 20px 50px;
+    }
+    article{
+        display: flex;
+        justify-content:space-between;
+        flex-wrap: wrap;  
+    }
+    article :nth-child(1){
+        padding: 20px 50px;
+        max-width: 480px;
+    }
+    .image-vision{
+        background-image: url('./business-vision.svg');
+        width: 580px;
+        height: 442px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position:absolute;
+        left: calc(50% - 78px);
+        transform: translateX(-50%);
+    }
+    .net-btn{
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        background-color: #272E4A;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight:320;
+        font-size: 1.3rem;
+        padding: 7px 28px;
+        border: 1px solid #272E4A;
+        border-radius: 10px;
+        margin-inline-start: 50px;
+        color: #FFFFFF;
+        transition:   0.5s transform , background-color  0.7s, color 0.7s;
+        margin-bottom: 73px;
+    }
+    .net-btn:hover{
+        background-color:unset;
+        color:#272E4A;
+        transform:scale(1.1)
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    article{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .our-vision .text-container {
+        width: fit-content;
+    }
+    .our-vision article :nth-child(1) {
+        padding: 20px 50px;
+        max-width:unset;
+    }
+    .our-vision article :nth-child(2) {
+        padding: 20px 50px;
+        max-width:unset;
+    }
+    .our-vision .image-vision{
+        top:0px;
+        width: 325px;
+        height: 272px;
+        margin: 30px auto;
+        bottom: 0px;
+        position: static;
+    }
+    .our-vision .net-btn{
+        position:static;
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,76 @@
+ul{
+    list-style-type: none;
+}
+
+.meit-is-all-about{
+    overflow-x: hidden;
+    padding-top: 70px;
+    padding-bottom: 90px;
+    background: url(./background.png);
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+    display: flex;
+    background-size: cover;
+
+    .blocks-info{
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template-columns: repeat(2, 350px);
+        grid-template-rows:repeat(6, minmax(1fr,50px)) ;
+        row-gap: 20px;
+        column-gap: 70px;
+        li{
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            
+            h2{
+                color: #272E4A;
+                font-size: 1.3rem;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+            p{
+                color: #272E4A;
+                font-weight: 420;
+                font-size: 0.9rem;
+            }
+
+            &:nth-child(1){
+                grid-row-start: 1;
+                grid-row-end: 3
+            }
+            &:nth-child(2){
+                grid-row-start: 1;
+                grid-row-end: 2
+            }
+            &:nth-child(4){
+                grid-row-start: 2;
+                grid-row-end: 4
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 858px) {
+    .meit-is-all-about .blocks-info {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .meit-is-all-about .blocks-info li:nth-child(1),
+    .meit-is-all-about .blocks-info li:nth-child(2),
+    .meit-is-all-about .blocks-info li:nth-child(3),
+    .meit-is-all-about .blocks-info li:nth-child(4)
+    {
+        grid-row-start: unset;
+        grid-row-end: unset;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    
+
+}

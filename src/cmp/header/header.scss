@@ -1,0 +1,216 @@
+.header{
+    background-color: #FFFFFF;
+    // height: 119px;
+
+    
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.navbar {
+    box-shadow: -1px 3px 5px;
+
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 100;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-menu :last-child{
+    justify-content:flex-end;
+
+}
+
+.nav-item {
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #272E4A;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 37px;
+    padding: 29px 0 17px 0;
+}
+
+.nav-item:hover{
+    background-color: #a5a5a53b;
+    color: rgba(0, 0, 0, 0.651);
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+    margin-left: 96px;
+    margin-right: 2.2rem;
+}
+
+h3{
+    border-top: 1px solid #E2E8F0;
+    background: #DC0303;;
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.125rem;
+    text-align: center;
+    line-height: 24px;
+    text-decoration:underline;
+    position: fixed;
+    top: 82px;
+    width: 100%;
+    z-index: 102;
+}
+
+.container-ul-header{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.icons-container{
+    justify-self:end;
+    
+    button{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        padding: 7px 24px;
+        border: none;
+        background: #272E4A;
+        color: white;
+        border-radius: 10px;
+        font-size: 1.2em;  
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: normal;
+
+        img{
+            margin-left: 10px;
+            background-color: #fff;
+            border-radius:50%;
+            width: 26px;
+            height:26px;
+            padding: 3px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 899px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    h3{
+        top:66px;
+    }
+
+    .icons-container{
+        margin-left: 0;
+        button{
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin-bottom: 10px;
+            img{
+                margin-left: 5px;
+                width: 32px;
+                height:32px;
+            }
+        }
+
+    }
+    .nav-logo {
+        margin-left: 0px;
+    }
+    
+    .navbar{
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.1rem 1.5rem;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    
+.container-ul-header{
+    padding-top:0px;
+    padding-bottom: 0px;
+}
+
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+
+}

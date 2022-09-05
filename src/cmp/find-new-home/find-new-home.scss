@@ -1,0 +1,198 @@
+.find-new-home{
+    background-image: url(./imgs/background3.png);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    
+    .container{
+        width: 1061px;
+        margin: 0 auto;
+        padding: 80px 50px;
+        position: relative;
+
+        a{
+            position: absolute;
+            right: 65px;
+            bottom: 40px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            color: #272E4A;
+            text-decoration: none;
+            border-bottom: #272E4A 2px solid;
+        }
+    }
+    h2{
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 400;
+        color: #272E4A;
+        font-size: 2rem;
+    }
+
+    h3{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: #272E4A;
+
+    }
+    
+
+    .images-container{
+        display: flex;
+        align-items: center;
+        // flex-wrap: wrap;
+        gap:40px;
+    }
+    .image-1 {
+        margin-top: 40px;
+        aspect-ratio: 1 / 1;
+        width: 350px;
+        height: 350px;
+        border-radius: 20px;
+        object-fit: cover;
+        position:relative;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    .icon-image-big{
+        position: absolute;
+        top:50px;
+        z-index: 3;
+        right: 10px;
+        background-color:  #272E4A;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        filter: drop-shadow(-2px 2px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    .image-small{
+        aspect-ratio: 1 / 1;
+        max-width: 170px;
+        max-height: 170px;
+        border-radius: 20px;
+        object-fit: cover;
+        // display:block;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    
+
+    .image1-container{
+        position:relative;
+        // z-index:2;
+        width: fit-content;
+        // background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), #70707070);
+        h3{
+            position: absolute;
+            color: white;
+            bottom: 50px;
+            left: 20px;
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.4rem;
+        }
+    }
+    .small-images{
+        display: flex;
+        gap:20px;
+        justify-content:center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+
+    }
+
+    .small-image-container{
+        position: relative;
+        // transition: transform 0.02s  linear;
+
+        h3{
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 300;
+        }
+
+        .icon-image-small{
+            position: absolute;
+            top:10px;
+            z-index: 3;
+            right: 10px;
+        }
+
+        
+    }
+    .for-hover-small-image{
+        transition: transform 0.2s  linear;
+
+    }
+    .for-hover-small-image:hover{
+        transform: scale(1.1);
+    }
+
+    .price-btn{
+        position:absolute;
+        bottom: 15px;
+        left: 20px;
+        padding: 3px 22px;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 300;
+        background-color:  #272E4A;
+        font-size: 0.8rem;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+}
+
+@media only screen and (max-width: 1033px) {
+    .find-new-home{
+        .container{
+            width: unset;
+            margin: 0 auto;
+            padding: 80px 50px;
+            justify-content: center;
+
+        }
+
+
+
+}}
+
+@media only screen and (max-width: 873px) {
+
+    .find-new-home{
+        .images-container{
+        // display: flex;
+        // align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    } 
+        .image-small {
+            max-width: 146px;
+        }
+    }
+}
+
+@media only screen and (max-width: 873px) {
+
+    .find-new-home{
+        .image-small {
+            max-width: 126px;
+        }
+    }
+}

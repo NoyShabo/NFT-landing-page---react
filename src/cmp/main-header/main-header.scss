@@ -1,0 +1,174 @@
+.main-header{
+    margin: 0;
+    width: 100%;
+    height: fit-content;
+    background: linear-gradient(180deg, #fcb6d9 50%, #FAFAFA 100%);
+    background-color: #fcb6d9;
+
+    .bgc-yellow{
+        width: 100%;
+        height:fit-content;
+        background: linear-gradient(90deg, rgba(243, 223, 181) 5%, rgba(252,252,252,0) 23%, rgba(255,255,255,0) 74%, rgba(243, 223, 181, 0.897) );
+    }
+    .images-background{
+        width: 100%;
+        top:140px;
+        position: absolute;
+    }
+    .images-background::before{
+        width: 100%;
+        position: absolute;
+        content: "";
+        height: 208px;
+        opacity: 0.3;
+        background-attachment: fixed;
+    }
+
+    .bgc-white{
+        width: 100%;
+        height:fit-content;
+    }
+
+    .title-container{
+        padding-top: 120px;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3rem;
+        line-height: 6rem;
+        text-align: center;
+        color: #272E4A;
+        width: fit-content;
+        margin: 0 auto;
+        .title-light{
+            font-size: 4.8rem;
+            font-weight:350;
+            text-align: left;
+            padding-top: 60px;
+            opacity:unset;
+        }
+    }
+
+    p{
+        margin-top: 20px;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: 470;
+        font-size: 1.5rem;
+        text-align: center;
+        color: #272E4A;
+    }
+
+    .btns-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        font-size: 1.3rem;
+        height: 50px;
+    }
+    .nft-btn{
+        background: #272E4A;
+        border: 1px solid #272E4A;
+        border-radius: 10px;
+        color: white;
+        padding: 13px 30px;
+        margin-right: 40px;
+        font-size: 1.2rem;
+        transition:   0.5s transform , background-color  0.7s, color 0.7s;
+    }
+
+    .nft-btn:hover{
+        background:unset;
+        color: #272E4A;
+        border: 1px solid #272E4A;
+        transform: scale(1.1);
+    }
+    
+    .metaMask-btn{
+        border: 1px solid #272E4A;
+        background: unset;
+        border-radius: 10px;
+        color: #272E4A;
+        padding: 13px 30px;
+        font-size: 1.2rem;
+        transition:   0.5s transform , background-color  0.7s, color 0.7s;
+    }
+
+    .metaMask-btn:hover{
+        background: #272E4A;
+        color: white;
+        transform: scale(1.1);
+    }
+
+    .box{
+        width: 60px;
+        height: 60px;
+    }
+
+    .pink-boxes{
+        display: flex;
+        width: 120px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+
+    .pink-boxes :nth-child(2),.pink-boxes :nth-child(3){
+        background-color: #f4b1ca;
+    }
+
+    .pink-boxes :nth-child(2):hover,.pink-boxes :nth-child(3):hover{
+        background-color: #8cdef2;
+    }
+
+    .pink-boxes :first-child{
+        background-color:#f28cb6 ;
+    }
+
+    .pink-boxes :first-child:hover{
+        background-color: #34a2c4 ;
+    }
+    .linear-transpernt-line{
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+    }
+}
+
+@media only screen and (max-width: 777px) {
+    .main-header{
+        .title-container{
+        font-size: 2rem;
+        line-height: 6rem;
+        
+            .title-light{
+                font-size: 2rem;
+            }   
+        }
+        p {
+        font-size: 1.2rem;
+         padding: 10px;
+        }
+
+        .nft-btn{
+            padding: 13px 10px;
+            margin-right: 20px;
+            font-size: 1.1rem;
+        }
+    .metaMask-btn{
+            padding: 13px 10px;
+            font-size: 1.1rem;
+        }
+
+
+        .title-container{
+            width: 100%;
+            .title-light{
+                text-align: center;
+            }
+        }
+}
+    
+}
+
+
+
+

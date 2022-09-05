@@ -1,0 +1,98 @@
+.footer{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #272E4A;
+    align-items: center;
+    justify-content: space-between;
+    .logo{
+        padding: 30px;
+    }
+
+    .input-container{
+        display: flex;
+        align-items:stretch;
+    }
+    .news-setter{
+        margin-inline-start: 40px;
+
+        h2{
+            color: white;
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.6rem;
+        }
+        h3{
+            margin-top: 5px;
+            color: white;
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 1.2rem;
+        }
+
+        .input{
+            border: none;
+            padding: 7px;
+            border-radius: 10px;
+            margin-top: 7px;
+            font-size: 0.8rem;
+            margin-right: 10px;
+        }
+        button{
+            border-radius: 50%;
+            border: none;
+            background-color: white;
+            padding: 5px;
+            background-image: url(./icons/send-btn.svg);
+            background-repeat: no-repeat;
+            display: block;
+            width: 20px;
+            height: 21px;
+            background-position: center;
+            padding: 18px;
+        }
+    }
+    .follow-us{
+        color: white;
+        margin-inline-end: 40px;
+        h2{
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 400;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+    }
+    .icons-container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (max-width:725px) {
+    .footer{
+        .logo{
+            width: 120px;
+        }
+
+        .news-setter{
+            display: none;
+        }
+        .follow-us h2, .news-setter h2 {
+            font-size: 1.1rem;
+        }
+
+        .news-setter h3{
+            font-size: 0.9rem;
+
+        } 
+
+        .news-setter .input {
+            padding: 3px 5px;
+            font-size: 0.7rem;
+        }
+    }
+
+}

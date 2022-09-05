@@ -1,0 +1,94 @@
+.our-mission{
+    padding-top: 90px;
+    overflow-x: hidden;
+
+    position: relative;
+
+    .text-container{
+        width: fit-content;
+        margin: 0 auto;
+    }
+    h2{
+        color: #272E4A;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: 420;
+        font-size: 2rem;
+        padding: 20px 50px;
+    }
+    article{
+        display: flex;
+        justify-content: space-between; 
+        flex-wrap: wrap;   
+    }
+    article :nth-child(1){
+        padding: 20px 50px;
+        max-width: 380px;
+    }
+    article :nth-child(2){
+        padding: 20px 50px;
+        max-width: 530px;
+        padding-bottom: 100px;
+    }
+    .image-home{       
+        background-image: url('./home-image.svg');
+        display: block;
+        width: 409px;
+        height: 332px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position:absolute;
+        bottom: 70px
+    }
+    .whitepaper-btn{
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        position: relative;
+        right: -430px;
+        background-color: #272E4A;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight:320;
+        font-size: 1.3rem;
+        padding: 7px 28px;
+        border: 1px solid #272E4A;
+        border-radius: 10px;
+        bottom: 30px;
+        color: #FFFFFF;
+        transition:   0.5s transform , background-color  0.7s, color 0.7s;
+    }
+    .whitepaper-btn:hover{
+        background-color:unset;
+        color:#272E4A;
+        transform:scale(1.1)
+    }
+}
+
+@media only screen and (max-width: 1022px) {
+    article{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .our-mission article :nth-child(1) {
+        padding: 20px 50px;
+        max-width:unset;
+    }
+    .our-mission article :nth-child(2) {
+        padding: 20px 50px;
+        max-width:unset;
+    }
+    .our-mission .image-home{
+        top:0px;
+        width: 349px;
+        height: 272px;
+        margin: 30px auto;
+        bottom: 0px;
+        position: static;
+    }
+    .our-mission .whitepaper-btn{
+        position:static;
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
